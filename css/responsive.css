@@ -1,0 +1,159 @@
+@media (max-width: 900px)
+{
+	*
+	{
+		/*overflow: scroll;*/
+		font-size: 100%;
+	}
+	html
+	{
+		zoom: 100%;
+	}
+	main
+	{
+		/*background: mediumblue;*/
+	}
+	#spacemaker
+	{
+		display: none;
+	}
+	.mobile-nav-toggle
+	{
+		display: block;
+		position: absolute;
+		background-color: rgba(255, 255, 255, 0.0);
+		background-image: url("/static/hamburger-white.svg");
+		background-repeat: no-repeat;
+		width: 1.5rem;
+		aspect-ratio: 1;
+		z-index: 1111;
+		font-size: 0;
+		top: 1rem;
+		right: 1.5rem;
+		border: none;
+		cursor: pointer;
+	}
+	#nav-toggle-image
+	{
+		width: 1.5rem;
+		aspect-ratio: 1;
+	}
+	.navOptions
+	{
+		position: fixed;
+		background-color: rgba(34, 34, 34, var(--blur-amount));
+		height: 100vh;
+		width: 40%;
+		inset: 0% 0% 0% 60%;
+		flex-direction: column;
+		justify-content: center;
+		/*filter: blur(0px);*/
+		z-index: 100;
+		transform: translateX(var(--translate-percentage));
+		transition: transform 500ms ease-in-out;
+	}
+	body::before
+	{
+		content: '';
+		position: fixed;
+		background-color: rgba(0, 0, 0, 0.3);
+		height: 100vh;
+		width: 40%;
+		inset: 0% 0% 0% 60%;
+		z-index: 1;
+		backdrop-filter: blur(0.3rem);
+		transform: translateX(var(--translate-percentage));
+		transition: transform 500ms ease-in-out;
+	}
+	.mainContent
+	{
+		flex-direction: column;
+		/*justify-content: center;*/
+		align-items: center;
+		font-size: 0.75rem;
+
+		/*flex-shrink: 0.5;*/
+		/*overflow: hidden;*/
+	}
+	.mainContent h6
+	{
+		font-size: 1.5rem;
+	}
+	.mainContent h1
+	{
+		font-size: 4rem;
+	}
+	.bg
+	{
+		/*display: flex;*/
+		overflow: hidden;
+	}
+	.reveal
+	{
+		flex-wrap: nowrap;
+		white-space: nowrap;
+		/*word-break: break-all;*/
+		/*display: none;*/
+	}
+
+	/*For About Page*/
+
+	.responsiveAbbout
+	{
+		padding: 2rem;
+		/*padding-bottom: 25vh;*/
+	}	
+	.mainContent div
+	{
+		width: 100%;
+		/*word-break: keep-all;*/
+	}
+	.mainContent div p
+	{
+		text-align: left;
+		font-size: 0.825rem;
+		/*letter-spacing: 0.125rem;*/
+		word-spacing: 0.125rem;
+		line-height: 1.25rem;
+	}
+	.colorAnimate3
+	{
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	.workList
+	{
+		list-style: circle;
+	}
+	.workList li::before
+	{
+		content: '';
+		display: inline-block;
+		width: 1rem;
+		aspect-ratio: 1;
+		/*background-color: transparent;*/
+		/*background-image: url(/static/spinning-circle.gif);*/
+		/*filter: invert(100%);*/
+		/*background-repeat: no-repeat;*/
+		/*list-style: url(/static/close-black.svg);*/
+	}
+	.divider-line
+	{
+		width: 8rem;
+		height: 0.1rem;
+		opacity: 30%;
+	}
+}
+
+@media (max-width: 390px)
+{
+	*
+	{
+		font-size: 95%;
+		/*zoom: 90%;*/
+	}
+	.mainContent div p
+	{
+		font-size: 0.625rem;
+	}
+}

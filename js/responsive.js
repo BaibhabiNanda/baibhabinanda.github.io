@@ -14,14 +14,14 @@ navToggle.addEventListener('click',event=>
 	if(translatePercentage==='0%')
 	{
 		document.documentElement.style.setProperty('--translate-percentage', '100%');
-		navImage['src']="/static/hamburger-white.svg"
+		navImage['src']="static/hamburger-white.svg"
 		// console.log("hemlo1");
 	}
 	else
 	{
 		document.documentElement.style.setProperty('--translate-percentage', '0%');
 		console.log("hemlo")
-		navImage['src']="/static/close-white.svg"
+		navImage['src']="static/close-white.svg"
 		// console.log("hemlo2");
 	}
 	// console.log("hemlo");
